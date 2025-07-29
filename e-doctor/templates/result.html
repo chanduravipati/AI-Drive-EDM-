@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultation Result</title>
+    <link rel="stylesheet" href="/static/css/consultation.css" />
+    <link rel="stylesheet" href="/static/css/results.css" />
+  </head>
+  <body class="background">
+    <h1>Consultation Result</h1>
+    
+    <div id="resultDisplay">
+      <p><strong>First Name:</strong> {{ first_name }}</p>
+      <p><strong>Contact Number:</strong> {{ contact }}</p>
+      <p><strong>Village:</strong> {{ village }}</p>
+      <p><strong>Email:</strong> {{ email }}</p>
+      <p><strong>Issue:</strong> {{ issue }}</p>
+    </div>
+
+    <div class="thank-you-message">
+      <p>Thank you for consulting us!</p>
+      <p>Have a speedy recovery!</p>
+    </div>
+  </body>
+</html>

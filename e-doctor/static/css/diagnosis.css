@@ -1,0 +1,94 @@
+/* diagnosis.css */
+
+body.background {
+  font-family: Arial, sans-serif;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+}
+
+body.background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("/static/images/doctor.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px);
+  z-index: -2;
+}
+
+body.background::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.267);
+  z-index: -1;
+}
+
+form {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+input[type="text"], button {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: none;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #00cc99;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #009977;
+}
+
+#diagnosisResultContainer {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  max-width: 500px;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#diagnosisResultContainer p {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#diagnosisList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#diagnosisList li {
+  font-size: 1.1rem;
+  color: #00ffcc;
+  margin: 5px 0;
+}
